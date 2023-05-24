@@ -174,7 +174,7 @@ public class Main {
         String name = keyboard.nextLine();
         System.out.println("Введите год написания картины");
         String year = keyboard.nextLine();
-        System.out.println("Введите описание кариины");
+        System.out.println("Введите описание картины");
         String description = keyboard.nextLine();
 
         String updatedPainting = "{\n   \"id\":"+id+",\n    \"name\": \""+name+"\",\n    \"year\": "+year+",\n    \"description\": \""+description+"\"\n}";
