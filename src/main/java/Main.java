@@ -127,12 +127,13 @@ public class Main {
                 delete(deleteCollections());
                 break;
             case "5":
-                delete(deleteEmployee());
+                delete(deleteEmployees());
                 break;
             default:
                 System.out.println("Такой таблицы не существует");
         }
     }
+
     public static void SearchInTable() throws IOException {
         Scanner keyboard = new Scanner(System.in);
         System.out.println("В какой таблице вы хотите провести поиск?");
@@ -284,7 +285,7 @@ public class Main {
         return deletingCollection;
     }
 
-    public static String deleteEmployee() throws IOException {
+    public static String deleteEmployees() throws IOException {
         Scanner keyboard = new Scanner(System.in);
         System.out.println("Введите ID работника, подлежащего удалению");
         String employeeId = keyboard.nextLine();
